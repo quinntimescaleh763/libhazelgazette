@@ -1,0 +1,12 @@
+{
+  "name": "log-aggregator-21c692",
+  "version": "1.0.0",
+  "description": "A log-aggregator utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["log-aggregator", "utility"],
+  "license": "MIT"
+}
