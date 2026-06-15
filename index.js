@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'log-aggregator-21c692';
+const APP_TAG = 'log-aggregator-cb8cdd';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
